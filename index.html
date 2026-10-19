@@ -1,439 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal academic website of José Patiño, robotics researcher at Cardiff University.">
-    <title>José Patiño | Robotics Researcher</title>
-
-    <style>
-        :root {
-            --primary: #183153;
-            --accent: #2878b5;
-            --background: #ffffff;
-            --light: #f4f7fb;
-            --text: #283444;
-            --muted: #64748b;
-            --border: #e2e8f0;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.7;
-            color: var(--text);
-            background: var(--background);
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            width: min(1080px, 90%);
-            margin: 0 auto;
-        }
-
-        header {
-            background: var(--background);
-            border-bottom: 1px solid var(--border);
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        nav {
-            min-height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 24px;
-        }
-
-        .logo {
-            color: var(--primary);
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-
-        nav ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 22px;
-            list-style: none;
-        }
-
-        nav a {
-            color: var(--text);
-            font-size: 0.94rem;
-        }
-
-        .hero {
-            padding: 100px 0 85px;
-            background: var(--light);
-        }
-
-        .hero h1 {
-            color: var(--primary);
-            font-size: clamp(2.5rem, 6vw, 4.2rem);
-            line-height: 1.15;
-            margin-bottom: 18px;
-        }
-
-        .hero .subtitle {
-            font-size: 1.3rem;
-            color: var(--accent);
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            max-width: 720px;
-            font-size: 1.05rem;
-        }
-
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            margin-top: 30px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 11px 21px;
-            border-radius: 5px;
-            font-weight: 600;
-            border: 1px solid var(--accent);
-        }
-
-        .button.primary {
-            color: white;
-            background: var(--accent);
-        }
-
-        .button.secondary {
-            color: var(--accent);
-            background: white;
-        }
-
-        section {
-            padding: 70px 0;
-            scroll-margin-top: 85px;
-        }
-
-        section:nth-of-type(even) {
-            background: var(--light);
-        }
-
-        h2 {
-            color: var(--primary);
-            font-size: 2rem;
-            margin-bottom: 25px;
-        }
-
-        h3 {
-            color: var(--primary);
-            margin-bottom: 8px;
-        }
-
-        .section-intro {
-            max-width: 760px;
-            margin-bottom: 28px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 22px;
-        }
-
-        .card {
-            padding: 24px;
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-        }
-
-        .card p {
-            color: var(--muted);
-        }
-
-        .item {
-            padding: 0 0 24px 20px;
-            margin-bottom: 24px;
-            border-left: 3px solid var(--accent);
-        }
-
-        .date {
-            color: var(--muted);
-            font-size: 0.92rem;
-            margin-bottom: 5px;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #e6f0fa;
-            color: var(--primary);
-            padding: 4px 10px;
-            margin: 5px 5px 0 0;
-            border-radius: 4px;
-            font-size: 0.88rem;
-        }
-
-        footer {
-            padding: 30px 0;
-            background: var(--primary);
-            color: white;
-            text-align: center;
-        }
-
-        footer a {
-            color: white;
-        }
-
-        @media (max-width: 650px) {
-            nav {
-                padding: 15px 0;
-                align-items: flex-start;
-                flex-direction: column;
-            }
-
-            nav ul {
-                gap: 12px;
-            }
-
-            .hero {
-                padding: 65px 0;
-            }
-
-            section {
-                padding: 50px 0;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="José Andrés Patiño-Miñán — Civil Engineer, MSc. GIS, remote sensing, and environmental geospatial analysis.">
+  <meta name="theme-color" content="#173b35">
+  <title>José Andrés Patiño-Miñán | Civil Engineer & Geospatial Researcher</title>
+  <style>
+    :root {
+      --ink: #1e302d;
+      --muted: #64736e;
+      --green: #173b35;
+      --green-2: #2e6658;
+      --sage: #eaf0eb;
+      --paper: #fbfaf7;
+      --line: #dce3dd;
+      --white: #fff;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, "Segoe UI", Arial, sans-serif; line-height: 1.7; }
+    a { color: var(--green-2); text-underline-offset: 3px; }
+    a:hover { color: var(--green); }
+    .wrap { width: min(var(--max), calc(100% - 42px)); margin-inline: auto; }
+    .topbar { position: sticky; top: 0; z-index: 20; background: rgba(251,250,247,.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    .nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { color: var(--green); font-weight: 750; letter-spacing: -.03em; text-decoration: none; white-space: nowrap; }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+    .navlinks a { font-size: .9rem; text-decoration: none; color: var(--ink); }
+    .navlinks a:hover { color: var(--green-2); }
+    .hero { padding: 82px 0 78px; background: linear-gradient(115deg, var(--sage), #f6f5ef 72%); border-bottom: 1px solid var(--line); }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(240px, .72fr); gap: 64px; align-items: center; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .15em; font-size: .78rem; font-weight: 750; color: var(--green-2); }
+    h1 { color: var(--green); font-size: clamp(2.5rem, 5.6vw, 4.65rem); line-height: 1.06; letter-spacing: -.055em; margin: 14px 0 17px; max-width: 760px; }
+    .role { font-size: clamp(1.05rem, 2vw, 1.3rem); font-weight: 600; margin: 0 0 4px; }
+    .focus { color: var(--muted); margin: 0 0 20px; }
+    .intro { max-width: 700px; font-size: 1.04rem; color: #40534d; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--green); border-radius: 4px; padding: 10px 17px; text-decoration: none; font-size: .93rem; font-weight: 700; }
+    .btn-primary { background: var(--green); color: white; }
+    .btn-primary:hover { background: var(--green-2); color: white; }
+    .btn-outline { color: var(--green); background: transparent; }
+    .portrait-frame { max-width: 350px; justify-self: end; position: relative; }
+    .portrait-frame::before { content: ""; position: absolute; inset: 14px -14px -14px 14px; border: 1px solid #a8bcb0; border-radius: 4px; }
+    .portrait { display: block; position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 35%; filter: grayscale(100%); border-radius: 4px; box-shadow: 0 16px 36px rgba(25,50,42,.12); }
+    section { padding: 72px 0; }
+    section:nth-of-type(even) { background: #fff; }
+    .section-head { max-width: 760px; margin-bottom: 30px; }
+    .kicker { text-transform: uppercase; letter-spacing: .14em; color: var(--green-2); font-size: .75rem; font-weight: 750; }
+    h2 { color: var(--green); font-size: clamp(1.8rem, 3.2vw, 2.55rem); letter-spacing: -.035em; line-height: 1.2; margin: 7px 0 12px; }
+    h3 { color: var(--green); margin: 0 0 6px; line-height: 1.35; }
+    p { margin-top: 0; }
+    .muted { color: var(--muted); }
+    .interest-grid, .skills-grid, .project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .tile, .project, .skill { background: white; border: 1px solid var(--line); border-radius: 6px; padding: 21px; }
+    .tile p, .project p { color: var(--muted); margin-bottom: 0; font-size: .96rem; }
+    .timeline { display: grid; gap: 25px; }
+    .entry { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 25px; padding-bottom: 25px; border-bottom: 1px solid var(--line); }
+    .entry:last-child { border-bottom: 0; padding-bottom: 0; }
+    .entry-date { color: var(--muted); font-size: .92rem; }
+    .entry-place { color: var(--green-2); font-weight: 650; }
+    .entry ul { margin: 10px 0 0; padding-left: 20px; }
+    .entry li { margin: 4px 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .chip { background: var(--sage); color: var(--green); border-radius: 3px; padding: 4px 9px; font-size: .82rem; }
+    .pub-label { display: inline-block; margin-bottom: 10px; font-size: .78rem; font-weight: 750; letter-spacing: .07em; text-transform: uppercase; color: var(--green-2); }
+    .project { display: flex; flex-direction: column; align-items: flex-start; }
+    .project p { flex: 1; }
+    .project .chips { margin-bottom: 12px; }
+    .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .skill ul { margin: 8px 0 0; padding-left: 20px; color: var(--muted); }
+    .skill li { margin: 2px 0; }
+    .leadership-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .leadership-item { padding: 17px 19px; border-left: 3px solid var(--green-2); background: white; border-top: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .contact-box { background: var(--green); color: white; border-radius: 7px; padding: clamp(25px, 5vw, 48px); display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .contact-box h2 { color: white; }
+    .contact-box p { color: #dce9e1; margin-bottom: 0; }
+    .contact-box .btn { background: white; color: var(--green); border-color: white; white-space: nowrap; }
+    footer { padding: 25px 0; color: var(--muted); font-size: .88rem; }
+    .footer-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    @media (max-width: 850px) {
+      .hero-grid { grid-template-columns: minmax(0, 1.2fr) minmax(190px, .7fr); gap: 35px; }
+      .interest-grid, .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .nav { align-items: flex-start; flex-direction: column; padding: 15px 0; gap: 10px; }
+      .navlinks { gap: 10px 15px; }
+    }
+    @media (max-width: 620px) {
+      .wrap { width: min(100% - 30px, var(--max)); }
+      .hero { padding: 52px 0 58px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+      .portrait-frame { justify-self: start; width: min(75%, 290px); margin-right: 14px; }
+      section { padding: 54px 0; }
+      .entry { grid-template-columns: 1fr; gap: 4px; }
+      .interest-grid, .project-grid, .skills-grid, .leadership-list { grid-template-columns: 1fr; }
+      .contact-box { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
 </head>
-
 <body>
-
-<header>
-    <nav class="container">
-        <a class="logo" href="#home">José Patiño</a>
-
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">JAPM<span aria-hidden="true">.</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research & Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
-</header>
+  </header>
 
-<main>
+  <main>
     <section class="hero" id="home">
-        <div class="container">
-            <p class="subtitle">Robotics Researcher | PhD Candidate</p>
-
-            <h1>José Patiño</h1>
-
-            <p>
-                I am a PhD candidate at Cardiff University researching
-                3D reconstruction of unknown objects using eye-in-hand
-                robotic manipulators. My research focuses on active
-                perception, view planning, motion planning and robotic control.
-            </p>
-
-            <div class="buttons">
-                <a class="button primary" href="#publications">
-                    View Publications
-                </a>
-
-                <a class="button secondary" href="cv.pdf">
-                    Download CV
-                </a>
-            </div>
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Civil Engineering · Geospatial Research</div>
+          <h1>José Andrés<br>Patiño-Miñán</h1>
+          <p class="role">Civil Engineer, MSc</p>
+          <p class="focus">GIS · Remote Sensing · Environmental Geospatial Analysis</p>
+          <p class="intro">I work at the intersection of civil engineering, geospatial analysis, and environmental research, with a focus on mining-related environmental and social impacts in the Ecuadorian Amazon. My interests include water resources, watershed management, and sustainable infrastructure.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#research">Explore my work</a>
+            <a class="btn btn-outline" href="cv.pdf">Download CV (PDF)</a>
+          </div>
+          <p class="muted" style="margin-top:18px;margin-bottom:0">Guayaquil, Ecuador · <a href="mailto:japatino@vt.edu">japatino@vt.edu</a></p>
         </div>
+        <div class="portrait-frame">
+          <img class="portrait" src="assets/profile.png" alt="Portrait of José Andrés Patiño-Miñán" width="800" height="1000">
+        </div>
+      </div>
     </section>
 
     <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-
-            <p class="section-intro">
-                I am a robotics researcher interested in enabling robots
-                to perceive, reconstruct and interact with unknown
-                environments. My work combines robotic motion planning,
-                active perception, optimisation and 3D reconstruction.
-                I am currently pursuing a PhD at Cardiff University.
-            </p>
-
-            <p>
-                My broader interests include robot manipulation,
-                impedance control, redundant manipulators and
-                intelligent robotic systems.
-            </p>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Profile</div>
+          <h2>About me</h2>
         </div>
+        <p> I am a civil engineer with a Master of Science in Civil Engineering from Virginia Polytechnic Institute and State University (Virginia Tech) and a bachelor's degree in Civil Engineering from Escuela Superior Politécnica del Litoral (ESPOL), Ecuador.</p>
+        <p>My academic and research experience includes Geographic Information Systems (GIS), remote sensing, environmental impact assessment, and geospatial analysis, particularly in assessing mining-related environmental and social impacts in the Ecuadorian Amazon.</p>
+        <p>My research interests extend to hydrology, watershed management, water resources, natural hazard mitigation, and engineering solutions that support public health and vulnerable communities.</p>
+      </div>
     </section>
 
-    <section id="research">
-        <div class="container">
-            <h2>Research Interests</h2>
-
-            <div class="grid">
-                <article class="card">
-                    <h3>View Planning</h3>
-                    <p>
-                        Selecting informative and reachable camera viewpoints
-                        to improve the reconstruction of unknown objects.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Motion Planning</h3>
-                    <p>
-                        Planning feasible robotic trajectories while
-                        accounting for kinematic constraints, obstacles
-                        and reconstruction objectives.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Robotic Control</h3>
-                    <p>
-                        Control of robotic manipulators, including
-                        impedance control and redundant robot systems.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>3D Reconstruction</h3>
-                    <p>
-                        Active perception and optimisation methods for
-                        reconstructing unknown objects from RGB-D data.
-                    </p>
-                </article>
-            </div>
+    <section id="interests">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Research directions</div>
+          <h2>Interests</h2>
         </div>
-    </section>
-
-    <section id="publications">
-        <div class="container">
-            <h2>Selected Publications</h2>
-
-            <p class="section-intro">
-                Selected research contributions in robotic view planning
-                and 3D reconstruction. Publication links and bibliographic
-                details can be added as they are finalised.
-            </p>
-
-            <div class="item">
-                <h3>
-                    One-Shot View Planning and Online Optimization-based
-                    Replanning for Unknown Object Reconstruction
-                </h3>
-                <p class="date">ICRA 2026</p>
-                <p>
-                    Research on one-shot view planning and online
-                    optimisation-based replanning for unknown object
-                    reconstruction using a robotic manipulator.
-                </p>
-            </div>
-
-            <div class="item">
-                <h3>
-                    Learning-based Object Center Adjustment for 3D
-                    Reconstruction using an Eye-in-Hand Robotic Manipulator
-                </h3>
-                <p class="date">TAROS 2026</p>
-                <p>
-                    Research on adjusting object positioning to improve
-                    the reachability of camera viewpoints during
-                    robotic 3D reconstruction.
-                </p>
-            </div>
-
-            <div class="item">
-                <h3>
-                    Path Deviation-Based View Planning and Path Optimization
-                    for Active 3D Reconstruction
-                </h3>
-                <p class="date">Research manuscript</p>
-                <p>
-                    Research on adapting robotic trajectories to observe
-                    previously unseen surface regions and improve
-                    reconstruction completeness.
-                </p>
-            </div>
+        <div class="interest-grid">
+          <article class="tile"><h3>GIS & Geospatial Analysis</h3><p>Spatial data analysis, geospatial data management, thematic cartography, and environmental impact mapping.</p></article>
+          <article class="tile"><h3>Remote Sensing</h3><p>Satellite and spatial data applications for environmental assessment and land-use change.</p></article>
+          <article class="tile"><h3>Hydrology & Water Resources</h3><p>Quantitative hydrology, watershed processes, and sustainable water resource management.</p></article>
+          <article class="tile"><h3>Watershed Management</h3><p>Evidence-based approaches to watershed planning and environmental protection.</p></article>
+          <article class="tile"><h3>Natural Hazard Mitigation</h3><p>Disaster resilience and planning to reduce risks to communities and infrastructure.</p></article>
+          <article class="tile"><h3>Sustainable Land Development</h3><p>Land-use and land-cover change, sustainable infrastructure, and environmental decision-making.</p></article>
         </div>
+      </div>
     </section>
 
     <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-
-            <div class="item">
-                <h3>PhD in Computer Science</h3>
-                <p class="date">Cardiff University | October 2023 – Present</p>
-                <p>
-                    Research topic: Improving 3D Reconstruction of Unknown
-                    Objects with Eye-in-Hand Robotic Manipulators.
-                </p>
-            </div>
-
-            <div class="item">
-                <h3>BSc in Mechatronics Engineering</h3>
-                <p class="date">ESPOL | 2018 – 2023</p>
-                <p>
-                    Background in robotics, robotic control, redundant
-                    manipulators and engineering optimisation.
-                </p>
-            </div>
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Academic background</div><h2>Education</h2></div>
+        <div class="timeline">
+          <article class="entry">
+            <div class="entry-date">May 2026<br>Blacksburg, Virginia, USA</div>
+            <div><h3>Master of Science in Civil Engineering</h3><div class="entry-place">Virginia Polytechnic Institute and State University (Virginia Tech)</div><p>Concentration: Sustainable Land Development · GPA: 3.33/4.00</p><p class="muted">Relevant coursework: Quantitative Hydrology; Disaster Resilience and Natural Hazard Mitigation Planning; Smart and Sustainable Infrastructure; Sustainable Land Development.</p></div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">September 2025<br>Guayaquil, Ecuador</div>
+            <div><h3>Bachelor’s Degree in Civil Engineering</h3><div class="entry-place">Escuela Superior Politécnica del Litoral (ESPOL)</div><p>GPA: 8.13/10.00</p></div>
+          </article>
         </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Selected work</div><h2>Research & Projects</h2><p class="muted">Research publications and engineering projects spanning environmental geospatial analysis, transportation planning, and infrastructure design.</p></div>
+        <div class="project-grid">
+          <article class="project">
+            <span class="pub-label">First author · IEEE IGARSS 2025</span>
+            <h3>Assessing Mining Pressure in the Ecuadorian Amazon: Analysis of Environmental and Social Impacts</h3>
+            <p>Assessed environmental and social impacts of mining in the Ecuadorian Amazon, using geospatial analysis to investigate mining-related pressures on sensitive ecosystems and territories.</p>
+            <div class="chips"><span class="chip">GIS</span><span class="chip">Remote Sensing</span><span class="chip">Environmental Assessment</span></div>
+          </article>
+          <article class="project">
+            <span class="pub-label">Co-author · IEEE IGARSS 2026</span>
+            <h3>Ecuadorian Mining Cadaster Closure: Analysis of Illegal Mining Expansion in Amazonian Protected Areas and Indigenous Territories</h3>
+            <p>Examined illegal mining expansion in the Ecuadorian Amazon and its environmental implications for protected areas and Indigenous territories.</p>
+            <div class="chips"><span class="chip">Geospatial Analysis</span><span class="chip">Land-Use Change</span></div>
+          </article>
+          <article class="project">
+            <span class="pub-label">Master’s project · Virginia Tech · May 2025</span>
+            <h3>SMART SCALE: Scoring System Replication and Transportation Funding Analysis</h3>
+            <p>Built a Python model to replicate Virginia’s SMART SCALE project evaluation system, analysing historical funding patterns and simulating 100 transportation projects. The model achieved R² = 0.9916 against official scores and highlighted a potential scoring preference for highway projects over pedestrian, cycling, and multimodal alternatives.</p>
+            <div class="chips"><span class="chip">Python</span><span class="chip">Simulation</span><span class="chip">Transportation Planning</span></div>
+          </article>
+          <article class="project">
+            <span class="pub-label">Undergraduate capstone · ESPOL</span>
+            <h3>Automated Rural Roadway Redesign</h3>
+            <p>Used Autodesk InfraWorks to redesign the horizontal alignment of a 13.5-km rural road in Ecuador, supporting roadway rehabilitation and geometric design.</p>
+            <div class="chips"><span class="chip">InfraWorks</span><span class="chip">Roadway Design</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Career</div><h2>Professional Experience</h2></div>
+        <div class="timeline">
+          <article class="entry">
+            <div class="entry-date">Jan 2026 – May 2026</div>
+            <div><h3>Graduate Teaching Assistant</h3><div class="entry-place">Virginia Tech · Department of Civil and Environmental Engineering</div><ul><li>Supported two academic sections comprising 101 students.</li><li>Assisted with sustainable infrastructure, decarbonisation, and life-cycle assessment activities.</li><li>Delivered an independent lecture and practical workshop on embodied carbon estimation using One Click LCA.</li></ul></div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">Jan 2025 – Dec 2025</div>
+            <div><h3>Graduate Assistant</h3><div class="entry-place">Virginia Tech · Department of Civil and Environmental Engineering</div><ul><li>Coordinated 10 academic seminar sessions, averaging approximately 40 professionals per session.</li><li>Facilitated communication between students, faculty, and external collaborators.</li><li>Supported event planning, programme administration, and certification processes.</li></ul></div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">Oct 2025 – Dec 2025</div>
+            <div><h3>Data Analyst</h3><div class="entry-place">Virginia Tech · Department of Civil and Environmental Engineering</div><ul><li>Processed and classified survey and interview data from more than 100 civil engineers.</li><li>Analysed perceptions of human-centred infrastructure and identified trends relevant to engineering decision-making.</li></ul></div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">Jan 2023 – Sep 2025</div>
+            <div><h3>Research Assistant</h3><div class="entry-place">ESPOL</div><ul><li>Applied GIS to assess mining-related environmental impacts in Ecuador.</li><li>Prepared thematic maps, geospatial databases, and technical reports.</li><li>Contributed to watershed management research, literature reviews, and academic publications.</li></ul></div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">Jul 2024 – Dec 2024</div>
+            <div><h3>Territorial Planning and Project Development Intern</h3><div class="entry-place">Constructora Jalil · Guayaquil, Ecuador</div><ul><li>Supported zoning documentation and urban development authorisations.</li><li>Assisted with permitting processes for more than 10 development projects.</li></ul></div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">Feb 2024 – Apr 2024</div>
+            <div><h3>Project Management Intern</h3><div class="entry-place">Ministry of Transport and Public Works (MTOP) · Ecuador</div><ul><li>Evaluated pavement conditions along a 15-km roadway.</li><li>Reviewed documentation for more than 42 infrastructure projects and supported technical progress reporting.</li><li>Reviewed water-management documentation associated with a roadway project.</li></ul></div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">Jan 2021 – Jan 2025</div>
+            <div><h3>Undergraduate Teaching Assistant</h3><div class="entry-place">ESPOL</div><ul><li>Delivered practical and laboratory sessions in GIS, Mechanics of Materials, and Reinforced Concrete.</li><li>Supported student assessment and tutoring in General Chemistry.</li></ul></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Tools & capabilities</div><h2>Skills</h2></div>
+        <div class="skills-grid">
+          <article class="skill"><h3>GIS & Geospatial Analysis</h3><ul><li>ArcGIS Pro</li><li>Spatial data analysis and management</li><li>Thematic cartography</li><li>Environmental impact mapping</li></ul></article>
+          <article class="skill"><h3>Remote Sensing & Environmental Research</h3><ul><li>Remote sensing applications</li><li>Land-use and land-cover analysis</li><li>Environmental assessment</li><li>Scientific research and technical reporting</li></ul></article>
+          <article class="skill"><h3>Hydrology & Civil Engineering</h3><ul><li>HEC-HMS and quantitative hydrology</li><li>Watershed management</li><li>Autodesk InfraWorks</li><li>AutoCAD, Civil 3D, Revit, and ETABS</li></ul></article>
+          <article class="skill"><h3>Programming & Sustainability</h3><ul><li>Python</li><li>Microsoft Excel</li><li>One Click LCA</li></ul></article>
+          <article class="skill"><h3>Languages</h3><ul><li>Spanish — Native</li><li>English — Native</li><li>Portuguese — Conversational</li></ul></article>
+          <article class="skill"><h3>Awards</h3><ul><li>Scientific Research Merit Award — ESPOL (December 2026)</li><li>Leadership and Self-Agency Badge — ESPOL (June 2024)</li><li>Bilingual International Baccalaureate Diploma and Medal (March 2020)</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Service & leadership</div><h2>Leadership</h2></div>
+        <div class="leadership-list">
+          <div class="leadership-item"><h3>President</h3><p class="muted">International Association for Hydro-Environment Engineering and Research (IAHR) — ESPOL Student Chapter</p></div>
+          <div class="leadership-item"><h3>Vice-President</h3><p class="muted">International Association for Hydro-Environment Engineering and Research (IAHR) — ESPOL Student Chapter</p></div>
+          <div class="leadership-item"><h3>Academic Vice-President</h3><p class="muted">Faculty of Engineering in Earth Sciences Student Association — ESPOL</p></div>
+          <div class="leadership-item"><h3>Marketing Department Member</h3><p class="muted">Society of Hispanic Professional Engineers (SHPE) — Virginia Tech</p></div>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-
-            <p>
-                I welcome opportunities to discuss robotics research,
-                potential collaborations and academic opportunities.
-            </p>
-
-            <div class="buttons">
-                <!-- Replace these placeholders with your actual profiles. -->
-                <a class="button primary" href="mailto:YOUR_EMAIL">
-                    Email Me
-                </a>
-
-                <a class="button secondary"
-                   href="https://github.com/YOUR_USERNAME">
-                    GitHub
-                </a>
-            </div>
+      <div class="wrap">
+        <div class="contact-box">
+          <div><div class="kicker" style="color:#b9d7c8">Get in touch</div><h2>Let’s connect.</h2><p>For research collaboration and professional enquiries related to GIS, remote sensing, environmental engineering, hydrology, and sustainable infrastructure.</p><p style="margin-top:12px"><strong>Guayaquil, Ecuador</strong> · <a href="mailto:japatino@vt.edu" style="color:white">japatino@vt.edu</a></p></div>
+          <a class="btn" href="mailto:japatino@vt.edu">Email José</a>
         </div>
+      </div>
     </section>
-</main>
+  </main>
 
-<footer>
-    <div class="container">
-        <p>© 2026 José Patiño | Personal Academic Website</p>
+  <footer>
+    <div class="wrap footer-row">
+      <span>© <span id="year">2026</span> José Andrés Patiño-Miñán</span>
+      <span>Personal academic website</span>
     </div>
-</footer>
-
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
